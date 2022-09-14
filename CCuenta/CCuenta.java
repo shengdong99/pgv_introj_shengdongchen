@@ -13,6 +13,7 @@ public class CCuenta {
     private String cuenta;
     private double saldo;
     private double tipoInterÃ©s;
+    private final int max=9999;
 
 
     public CCuenta()
@@ -23,6 +24,7 @@ public class CCuenta {
     {
         nombre =nom;
         cuenta=cue;
+        if(sal>max) return;
         saldo=sal;
     }
 
